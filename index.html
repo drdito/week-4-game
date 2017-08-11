@@ -6,8 +6,40 @@
     <link href="assets/css/reset.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-  	
-  <script type="text/javascript" src="assets/javascript/game.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  </body>
+    <div id="wrapper">
+    <h1 id="header">Crystal Collector</h1>
+    <div id="instructions">
+      <p>You will be given a random number at the start of the game</p>
+      <br>
+      <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+      <br>
+      <p>You win the game by matching your total score to a random number, you lose the game if your total score goes above the random number.</p>
+      <br>
+      <p>The value of each crystal is hidden from you until you click on it.</p>
+      <br>
+      <p>Each time when the game starts, the game will change the values of each crystal.</p>
+    </div>
+    <div id="randomNumber">
+    </div>
+    <div id="winsAndLosses">
+      <p id="winnerLoser"></p>
+      <p id="wins">wins: 0 </p>
+      <br>
+      <p id="losses">losses: 0</p>
+    </div>
+    <div id="crystalImages">
+      <img id="redCrystal" src="assets/images/red.png" alt="Red Crystal" width="95" height="130" />
+      <img id="blueCrystal" src="assets/images/blue.png" alt="Blue Crystal" width="95" height="130"/>
+      <img id="yellowCrystal" src="assets/images/yellow.png" alt="Yellow Crystal" width="95" height="130"/>
+      <img id="greenCrystal" src="assets/images/green.png" alt="Green Crystal" width="95" height="130"/>
+    </div>
+    <div id="yourScoreIs">
+      <p>Your total score is: </p>
+    </div>
+    <div id="totalScore">
+    </div>
+    </div>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    </body>
 </html>
