@@ -28,7 +28,7 @@ function randomValues() {
 
 //conditional statements for to generates wins and losses
 function conditionals () {
-  if (targetNumber == userNumber) { 
+  if (targetNumber === userNumber) { 
     wins++;
     $("#winnerLoser").html("<p>You Win!!</p>");
     $("#wins").html("wins: " + wins);
